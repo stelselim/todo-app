@@ -31,7 +31,7 @@ func getAllTasks(ctx *gin.Context) {
 
 func createTask(ctx *gin.Context) {
 	var newTaskInput types.TaskCreateInput
-	if err := ctx.ShouldBindBodyWithJSON(ctx); err != nil {
+	if err := ctx.ShouldBindBodyWithJSON(&newTaskInput); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 	}
 
@@ -48,7 +48,7 @@ func createTask(ctx *gin.Context) {
 func updateTasksById(ctx *gin.Context) {
 	id := ctx.Param("id")
 	var updateTaskInput types.TaskUpdateInput
-	if err := ctx.ShouldBindBodyWithJSON(ctx); err != nil {
+	if err := ctx.ShouldBindBodyWithJSON(&updateTaskInput); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 	}
 	fmt.Println(updateTaskInput)
