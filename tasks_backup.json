@@ -1,0 +1,22 @@
+[
+    {
+        "id": "task-1",
+        "description": "Buy a cup of coffee",
+        "completed": false,
+        "user": {
+            "name": "Omer Necmi",
+            "surname": "Ustel",
+            "age": 27
+        }
+    },
+    {
+        "id": "task-2",
+        "description": "Read a book",
+        "completed": true,
+        "user": {
+            "name": "Omer Necmi",
+            "surname": "Ustel",
+            "age": 27
+        }
+    }
+]
