@@ -19,6 +19,7 @@ func SaveNewTask(task types.Task) {
 
 func UpdateTask(taskId string, description string, completed bool) {
 	fmt.Println("Update a Task")
+	fmt.Println(description)
 	tasks := GetTasks()
 	for index, val := range tasks {
 		if val.Id == taskId {

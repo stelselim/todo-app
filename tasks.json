@@ -1,18 +1,8 @@
 [
 	{
-		"id": "5b77b322-3671-4410-b888-cea2a667523e",
-		"description": "Wash your clothes",
+		"id": "2",
+		"description": "",
 		"completed": false,
-		"user": {
-			"name": "Selim",
-			"surname": "Ustel",
-			"age": 16
-		}
-	},
-	{
-		"id": "715c9726-cbba-4c27-9ceb-3295a1f38590",
-		"description": "New Description",
-		"completed": true,
 		"user": {
 			"name": "Selim",
 			"surname": "Ustel",
